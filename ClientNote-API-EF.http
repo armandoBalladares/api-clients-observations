@@ -1,0 +1,6 @@
+@ClientNote_API_EF_HostAddress = http://localhost:5210
+
+GET {{ClientNote_API_EF_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
