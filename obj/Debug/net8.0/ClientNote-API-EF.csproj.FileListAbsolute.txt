@@ -30,3 +30,6 @@ C:\Users\DELL 7480\Documents\Development\Pract\ClientNote-API-EF\obj\Debug\net8.
 C:\Users\DELL 7480\Documents\Development\Pract\ClientNote-API-EF\obj\Debug\net8.0\ClientNote-API-EF.pdb
 C:\Users\DELL 7480\Documents\Development\Pract\ClientNote-API-EF\obj\Debug\net8.0\ClientNote-API-EF.genruntimeconfig.cache
 C:\Users\DELL 7480\Documents\Development\Pract\ClientNote-API-EF\obj\Debug\net8.0\ref\ClientNote-API-EF.dll
+C:\Users\DELL 7480\Documents\Development\Pract\ClientNote-API-EF\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\DELL 7480\Documents\Development\Pract\ClientNote-API-EF\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DELL 7480\Documents\Development\Pract\ClientNote-API-EF\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
