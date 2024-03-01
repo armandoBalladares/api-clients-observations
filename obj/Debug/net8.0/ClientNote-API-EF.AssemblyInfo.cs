@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClientNote-API-EF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecbf5d8dbdf222e99347777816ed268707d67cb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15883fc45e6aa0de88e0a9831d5336fcc7c1d303")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClientNote-API-EF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClientNote-API-EF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
