@@ -7,14 +7,14 @@ namespace ClientNote_API_EF.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key, Column(Order = 0)]
-        public required int Id { get; set; }
+        public int Id { get; set; }
         public required string Name { get; set; }
         public string? LastName { get; set; }
 
         public required string Phone { get; set; }
         public string? Email { get; set; }
         public bool? Archived { get; set; }
-        public ICollection<Comment> Comments { get; set; }
+        public ICollection<Comment>? Comments { get; set; }
 
         public DateTime? Created { get; set; }
         public string? Updated { get; set; }
