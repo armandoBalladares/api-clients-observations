@@ -1,13 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using ClientNote_API_EF.Models;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve)
+    .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-builder.Services.AddControllers();
-
-builder.Services.AddDbContext<ClientContext>( op => op.UseInMemoryDatabase("Client") );
+builder.Services.AddDbContext<ClientContext>( op => op.UseInMemoryDatabase("Client1") );
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
