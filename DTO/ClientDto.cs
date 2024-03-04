@@ -13,7 +13,7 @@ namespace ClientNote_API_EF.DTO
         public DateTime?  Created { get; set; } = DateTime.Now;
         public string? Updated { get; set; }
         public string? Deleted { get; set; }
-        public ICollection<CommentDto>? Comments { get; set; }
+        // public ICollection<CommentDto>? Comments { get; set; }
 
     }
 }

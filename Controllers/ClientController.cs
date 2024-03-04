@@ -47,7 +47,7 @@ namespace ClientNotes.Controllers
                 Created = DateTime.Now,
                 Updated = null,
                 Deleted = null,
-                Comments = clientDto.Comments.Select(c => new Comment { Description = c.Description }).ToList()
+                //Comments = clientDto.Comments.Select(c => new Comment { Description = c.Description }).ToList()
             };
 
             this._dbcontext.Add( client );
