@@ -86,5 +86,28 @@ namespace ClientNotes.Controllers
             return NoContent();
         }
 
+        // DELETE: api/clients/{id}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteClient(int id)
+        {
+            var clientFound = await this._dbcontext.Clients.FindAsync(id);
+
+            if (clientFound == null)
+            {
+                return NotFound();
+            }
+
+            clientFound.Archived = true;
+            clientFound.Deleted = DateTime.Now.ToString();
+            this._dbcontext.Entry(clientFound).State = EntityState.Modified;
+
+            await this._dbcontext.SaveChangesAsync();
+
+            // _dbcontext.Clients.Remove(clientFound);
+            // await _dbcontext.SaveChangesAsync();
+
+            return NoContent();
+        }
+
     }
 }
