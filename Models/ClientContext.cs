@@ -17,6 +17,8 @@ namespace ClientNote_API_EF.Models {
             modelBuilder.Entity<Client>()
                 .HasMany(cli => cli.Comments)
                 .WithOne(com => com.Client );
+            // modelBuilder.Entity<Client>().HasData( new Client { Name = "Julio", LastName = "Lopez", Phone = "23456789" } );
+
         }
 
     }
